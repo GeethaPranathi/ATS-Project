@@ -1,7 +1,10 @@
-# 🧠 ATS-Project  
+# 🧠 ATS-Project
+
 ### Smart ATS Resume Analyzer using Gemini AI
 
-ATS-Project is a Flask-based web application that analyzes a candidate’s resume against a given job description using Google Gemini AI.  
+🔗 **Live Demo:** [ats-project-e8rd.onrender.com](https://ats-project-e8rd.onrender.com/)
+
+ATS-Project is a Flask-based web application that analyzes a candidate's resume against a given job description using Google Gemini AI.  
 It simulates an Applicant Tracking System (ATS) by providing an ATS score, matching skills, missing skills, and improvement suggestions.
 
 ---
@@ -23,14 +26,14 @@ It simulates an Applicant Tracking System (ATS) by providing an ATS score, match
 
 ## 🛠️ Tech Stack
 
-Backend
+**Backend**
 - Python
 - Flask
 - Google Gemini API
 - PyPDF2
 - python-dotenv
 
-Frontend
+**Frontend**
 - HTML
 - CSS
 - JavaScript (Fetch API)
@@ -67,10 +70,12 @@ Do not expose your API key in public repositories.
 ## 📦 Installation
 
 1. Clone the repository:
-git clone https://github.com/your-username/ATS-Project.git
+
+git clone https://github.com/GeethaPranathi/ATS-Project.git
 cd ATS-Project
 
 2. Install required dependencies:
+
 pip install flask google-generativeai PyPDF2 python-dotenv
 
 ---
@@ -79,22 +84,23 @@ pip install flask google-generativeai PyPDF2 python-dotenv
 
 python main.py
 
-The application will start at:
-http://localhost:8000
+The application will start at: http://localhost:8000
+
+Or try the live version here: https://ats-project-e8rd.onrender.com/
 
 ---
 
 ## 🧠 How It Works
 
-1. User uploads a resume PDF  
-2. User enters a job description  
-3. Resume text is extracted using PyPDF2  
-4. Gemini AI compares the resume and job description  
+1. User uploads a resume PDF
+2. User enters a job description
+3. Resume text is extracted using PyPDF2
+4. Gemini AI compares the resume and job description
 5. The system generates:
-- ATS score
-- Matching skills
-- Missing skills
-- Improvement recommendations
+   - ATS score
+   - Matching skills
+   - Missing skills
+   - Improvement recommendations
 
 ---
 
@@ -107,6 +113,7 @@ Inputs
 - job_description → Text
 
 Response
+
 {
   "ats_result": "AI-generated ATS analysis"
 }
